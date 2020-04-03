@@ -1,4 +1,4 @@
-# front-end-pro-2019-september
+# front-end-pro-april-2020
 
 ## Базовая работа с репозиторием
 
@@ -10,11 +10,11 @@
 
 3) выполнить команду 
  
-    `git clone https://github.com/hillel-front-end/front-end-pro-2019-september.git`
+    `git clone https://github.com/hillel-front-end/front-end-pro-april-2020.git`
 
 4) перейти в папку проекта
 
-    `cd front-end-pro-2019-september`
+    `cd front-end-pro-april-2020`
 
 # Обновление репозитория
 
