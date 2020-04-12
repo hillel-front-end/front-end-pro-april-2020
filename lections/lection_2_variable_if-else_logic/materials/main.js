@@ -89,7 +89,7 @@ c1 = false;
 // console.log(false || false);
 
 // логическое отрицание - !
-a = true;
+// a = true;
 
 // console.log(!a); // false
 // console.log( !(a1 || c1) );
