@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="dom.js"></script>
+    <style>
+        .block {
+            font-size: 48px;
+            overflow-y: auto;
+            /* background-color: rgba(245, 122, 23, 0.4); */
+        }
+
+        .popup {
+            position: fixed;
+            width: 400px;
+            height: 300px;
+            left: calc(50% - 200px);
+            top: calc(50% - 150px);
+            /* left: 50%; */
+            /* top: 50%; */
+            border: 2px solid black;
+            border-radius: 12px;
+            background-color: aquamarine;
+            justify-content: center;
+            align-items: center;
+            display: none;
+        }
+
+        .popup.open {
+            display: flex;
+        }
+
+        /* selector */
+        .block > ul > li:first-child { 
+            color: red;
+        }
+
+        #special {
+
+        }
+
+        .my-item {
+
+        }
+    </style>
+</head>
+<body>
+   <div id="special" class="block" align="right">
+       Lorem ipsum dolor sit amet consectetur 
+       adipisicing elit. Perferendis, 
+       nisi aperiam optio omnis 
+       repellendus est magni minus
+        corrupti nobis vero soluta eum 
+        maiores ad quaerat assumenda <span class="my-item">12</span>itaque, 
+        ratione cumque repudiandae.
+   </div>
+   <p>
+       Test
+   </p>
+
+   <div id="popup" class="popup">
+       <button>Click me</button>
+   </div>
+
+   <hr>
+   <ul>
+       <li></li>
+       <li class="my-item"></li>
+       <li></li>
+   </ul>
+
+   <span class="my-item"></span>
+   <hr>
+   <div class="results"></div>
+   <input class="form-text" type="text">
+   <input class="form-checkbox" type="checkbox">
+   <textarea class="form-textarea" cols="30" rows="10"></textarea>
+
+   <!-- <script src="main.js"></script> -->
+</body>
+</html>
