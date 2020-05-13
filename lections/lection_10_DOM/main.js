@@ -39,8 +39,5 @@ window.onload = function() {
         // this.style.backgroundColor = 'brown'; // error
         event.target.style.backgroundColor = 'brown';
     }
-
-
-    // DOM Level 2
 }
 
