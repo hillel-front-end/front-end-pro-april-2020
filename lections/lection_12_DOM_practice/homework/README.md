@@ -1,17 +1,16 @@
 # Изучить материал
-    https://learn.javascript.ru/keyboard-events
-    https://learn.javascript.ru/multi-insert
-    https://learn.javascript.ru/attributes-and-custom-properties
-    https://learn.javascript.ru/traversing-dom
-    https://learn.javascript.ru/events-and-timing-depth
-    https://learn.javascript.ru/obtaining-event-object
-    https://learn.javascript.ru/mouse-clicks
-    https://learn.javascript.ru/mousemove-mouseover-mouseout-mouseenter-mouseleave
+    * https://www.quirksmode.org/js/events_order.html
+    * https://developer.mozilla.org/ru/docs/Learn/JavaScript/Building_blocks/%D0%A1%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F
+    * https://learn.javascript.ru/default-browser-action
 # Практика
 
-Создать блок по середине экрана. При нажатии на стрелки - блок смещается в соответствующем направлении. Блок должен "упиратся в экран", т.е. не может выйти за пределы экрана.
+1. Реализовать контекстное (event = contextmenu) меню. Список хранить в памяти. // Почитать про event.preventDefault() в ссылке №3
+2. Хранить в списке action - название функции которая будет выполнятся при нажатии на пункт меню из задания №1.
+3. Применить меню к домашке с лекции №11 (персонаж). Создать actions: Jump, Remove, ChangeColor
 
-1) блок не вываливается за экран
+Пример списка, который описывает контекстное меню:
+```javascript
+var list = [{title: 'Title 1', action: openTitleOne}, ...]
+```
 
-2) при каждом "врезании" в стенку - блок отпрыгивает на step*2 пикселей в противоположном направлении.
-3) При каждом отпрыгивании - по середине блока появляется надпись "БЭМС", которая исчезает через 2 секунды
+upd* Контекстное меню - это список, который открывается в том месте, где находится курсор мыши в данный момент. При нажатии на пункт меню или вне списка - он закрывается.
