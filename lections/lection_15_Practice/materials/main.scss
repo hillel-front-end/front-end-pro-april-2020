@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.context-menu {
+    position: fixed;
+    left: 100px;
+    top: 100px;
+    box-shadow: 0 0 3px 0px #000;
+    padding: 10px 0;
+    display: block;
+
+    .item {
+        cursor: pointer;
+
+        padding: 0 20px;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.75);
+            color: #fff;
+        }
+    }
+
+    &.hidden {
+        display: none;
+    }
+}
