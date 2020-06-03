@@ -8,7 +8,7 @@ class ContexMenu {
         this.target = target;
     }
 
-    getActions() {
+    static getActions() {
         return {
             a1handler() {
                 console.log('a1handler');
@@ -75,7 +75,7 @@ var contextMenu = new ContexMenu([
 
 function init() {
     contextMenu.setTarget(document.querySelector('.context-menu'));
-    var contextMenuActions = contextMenu.getActions();
+    var contextMenuActions = ContexMenu.getActions();
     for(var i = 0, item; i < contextMenu.list.length; i++) {
         item = document.createElement('div');
         item.classList.add('item');
