@@ -20,3 +20,4 @@
         //Должны работать цепочки методов:
         elem.html('hello').append('!').prepend('!');
         elem.attr('class', 'www').attr('title', 'hello');
+        
