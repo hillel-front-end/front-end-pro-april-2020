@@ -216,23 +216,64 @@ var result = list.every(function(value, index, arr) {
     return typeof value == 'number';
 })
 
-console.log(result);
+// console.log(result);
 
 
 var result = list.some(function(value, index, arr) {
     return value < 0;
 })
 
-console.log(result);
+// console.log(result);
 
 // flat
 
 var list = [1, [4, 5, 6], 3, [7, 8, 9, [99, 88]], {x: 10}];
 
-console.log( list.flat(2) );
+// console.log( list.flat(2) );
 
 
 // reduce
 
+
+
+
+
+var list = [-72,6,4,37,-62,89,-7,63];
+
+
+for(var i = 0, sum = 0; i < list.length; i++) {
+    if (list[i] < 0) continue;
+    sum += list[i];
+}
+
+var res = list.reduce(function(sum, value, index, arr){
+    // console.log(sum, value, index);
+    if (value < 0) return sum;
+
+    return sum + value;
+});
+
+var arrs = [[5,7,78,8],[3,7,7,453],[1,2,3,4221,412,4]];
+
+var res = arrs.reduce(function(prev, item){
+    return prev.concat(item);
+}, [])
+
+
+// console.log(list, res);
+
 // find
+
+// var list = [-72,6,4,37,-62,370,-7,63];
+
+// var res = list.find(function(value, index, arr) {
+//     console.log(arguments)
+
+//     return value > 100;
+// });
+
+// console.log(res);
+
+
+
 
