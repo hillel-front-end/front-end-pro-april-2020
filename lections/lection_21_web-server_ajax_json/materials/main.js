@@ -1,21 +1,20 @@
 class Goods {
     request(path, options) {
         return fetch(path, options)
-            .then(function(data){
+            .then(data => {
                 return data.json();
             })
     }
 
     static renderTotal(){
-        var cart;
+        let cart;
         if (localStorage.cart) {
-            var decodedCart = JSON.parse(localStorage.cart);
-            cart = decodedCart;
+            cart = JSON.parse(localStorage.cart);
         } else {
             cart = {total: 0, quantity: 0}
         }
 
-        var detailedTemplate = '';
+        let detailedTemplate = '';
         if (cart.info) {
             for(var product in cart.info){
                 detailedTemplate += `<div>${cart.info[product].name} - Count: ${cart.info[product].quantity}, price per 1: ${cart.info[product].price}</div>`;
@@ -38,11 +37,10 @@ class Lamp extends Goods {
     }
 
     render() {
-        var self = this;
         this.request(this.path)
-            .then(function(data){
-                self.renderToTarget(data.goods);
-                self._goods = data.goods;
+            .then(data => {
+                this.renderToTarget(data.goods);
+                this._goods = data.goods;
             })
     }
 
@@ -51,13 +49,12 @@ class Lamp extends Goods {
     }
 
     renderToTarget(list) {
-        var self = this;
-        this.target.innerHTML += list.map(function(item){ return self.renderItem(item); }).join('');
+        this.target.innerHTML += list.map(item => this.renderItem(item)).join('');
     }
 
     renderItem(good) {
-        var title = good.name || '';
-        var img = good.imgPath || '';
+        const title = good.name || '';
+        const img = good.imgPath || '';
         return `
             <div class="good-item">
                 <div class="good-item__wrapper">
@@ -77,18 +74,18 @@ class Lamp extends Goods {
 window.onload = function() {
     Goods.renderTotal();
 
-    var target = document.querySelector('#goods');
-    var lamp = new Lamp(target);
+    const target = document.querySelector('#goods');
+    const lamp = new Lamp(target);
     lamp.render();
 
     document.querySelector('#goods').addEventListener('click', function(event){
         if (event.target.className != 'good-item__action') {
             return;
         }
-        var productId = event.target.dataset.productId;
-        var product = lamp.getGoods().find(function(item){ return item.id == productId });
+        const productId = event.target.dataset.productId;
+        const product = lamp.getGoods().find(item => item.id == productId);
 
-        var decodedCart = (localStorage.cart && JSON.parse(localStorage.cart)) || { total: 0, quantity: 0 };
+        let decodedCart = (localStorage.cart && JSON.parse(localStorage.cart)) || { total: 0, quantity: 0 };
         decodedCart.total += parseFloat(event.target.dataset.price);
         decodedCart.quantity++;
         decodedCart.avg = decodedCart.total/decodedCart.quantity; // example
@@ -102,7 +99,7 @@ window.onload = function() {
 }
 
 function addProductDataToStorage(product, storage) {
-    storage.info = storage.info || {};
+    let {info = {}} = info;
 
     if (storage.info[product.id]) {
         storage.info[product.id].quantity++;

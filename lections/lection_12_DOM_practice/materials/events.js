@@ -93,10 +93,11 @@ window.onload = function () {
 
     // Gallery
     var galleryItems = document.querySelectorAll('.gallery .gallery-item');
-    for(var i = 0; i < galleryItems.length; i++){
+    for(let i = 0; i < galleryItems.length; i++){
         galleryItems[i].addEventListener('click', function(){
             gallery.openFullView(this.querySelector('img').src);
             gallery.setCurrentElement(this);
+            console.log(i);
         })
     }
 
