@@ -1,0 +1,29 @@
+{
+    "type": "laptop",
+    "data": [
+       {
+            "brand": "Lenovo",
+            "model": "m1",
+            "price": 1200,
+            "currency": "USD"
+       },
+       {
+            "brand": "Lenovo",
+            "model": "m2",
+            "price": 1300,
+            "currency": "USD"
+        },
+        {
+            "brand": "Lenovo",
+            "model": "m3",
+            "price": 1100,
+            "currency": "USD"
+        },
+        {
+            "brand": "Asus",
+            "model": "Zenbook",
+            "price": 1500,
+            "currency": "USD"
+        }
+    ]
+}

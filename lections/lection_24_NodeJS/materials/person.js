@@ -1,8 +1,10 @@
 var x = 10;
 
+
+
 class Human {
     run() {
-        console.log(`${this.name} is running`, x)
+        console.log(`${this.name} is running`,)
     }
 }
 
