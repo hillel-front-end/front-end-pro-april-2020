@@ -1,0 +1,29 @@
+{
+    "goods": [
+      {
+        "id": "product-30",
+        "name": "Some name 5",
+        "price": "300",
+        "imgPath": "https://i8.rozetka.ua/goods/17989034/copy_asus_90nb0mz2_m12470_5ea6c5389da9e_images_17989034665.jpg"
+      },
+      {
+        "id": "product-55",
+        "name": "Some name 6",
+        "price": "400",
+        "imgPath": "https://i2.rozetka.ua/goods/14634316/copy_hp_pavilion_15_8kq92ea_5db015b65e79f_images_14634316689.jpg"
+      },
+      {
+        "id": "product-56",
+        "name": "Some name 7",
+        "price": "500",
+        "imgPath": "https://i8.rozetka.ua/goods/15292145/copy_asus_90nr02a1_m01210_5dd6c4955a399_images_15292145534.jpg"
+      },
+      {
+        "id": "product-57",
+        "name": "Some name 8",
+        "price": "700",
+        "imgPath": "https://i8.rozetka.ua/goods/18290711/acer_nh_q8leu_004_images_18290711137.jpg"
+      }
+    ]
+  }
+  

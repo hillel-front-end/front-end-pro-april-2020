@@ -37,11 +37,11 @@ class Lamp extends Goods {
     }
 
     render() {
-        this.request(this.path)
-            .then(data => {
-                this.renderToTarget(data.goods);
-                this._goods = data.goods;
-            })
+        return this.request(this.path)
+                .then(data => {
+                    this.renderToTarget(data.goods);
+                    this._goods = data.goods;
+                })
     }
 
     getGoods() {
@@ -70,13 +70,13 @@ class Lamp extends Goods {
 }
 
 
-
 window.onload = function() {
     Goods.renderTotal();
 
     const target = document.querySelector('#goods');
     const lamp = new Lamp(target);
-    lamp.render();
+    // create spinner
+    lamp.render().then() // remove spinner
 
     document.querySelector('#goods').addEventListener('click', function(event){
         if (event.target.className != 'good-item__action') {

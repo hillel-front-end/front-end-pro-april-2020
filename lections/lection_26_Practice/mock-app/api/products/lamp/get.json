@@ -1,0 +1,29 @@
+{
+    "goods": [
+      {
+        "id": "product-25",
+        "name": "Some name 1",
+        "price": "16",
+        "imgPath": "https://i8.rozetka.ua/goods/18219247/212976349_images_18219247861.jpg"
+      },
+      {
+        "id": "product-8",
+        "name": "Some name 2",
+        "price": "10",
+        "imgPath": "https://i8.rozetka.ua/goods/18219248/212976403_images_18219248431.jpg"
+      },
+      {
+        "id": "product-16",
+        "name": "Some name 3",
+        "price": "11",
+        "imgPath": "https://i2.rozetka.ua/goods/11039023/47877886_images_11039023821.jpg"
+      },
+      {
+        "id": "product-400",
+        "name": "Some name 4",
+        "price": "43",
+        "imgPath": "https://i8.rozetka.ua/goods/16949554/altalusse_inl-6121t-11_ivory_white_images_16949554287.jpg"
+      }
+    ]
+  }
+  

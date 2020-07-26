@@ -1,0 +1,28 @@
+{
+  "goods": [
+    {
+      "id": "product-666",
+      "name": "Some name 9",
+      "price": "150",
+      "imgPath": "https://i1.rozetka.ua/goods/1881348/msi_ds4100_gk_images_1881348044.jpg"
+    },
+    {
+      "id": "product-777",
+      "name": "Some name 10",
+      "price": "200",
+      "imgPath": "https://i2.rozetka.ua/goods/2265988/real_el_8700_gaming_backlit_black_images_2265988904.jpg"
+    },
+    {
+      "id": "product-888",
+      "name": "Some name 11",
+      "price": "250",
+      "imgPath": "https://i2.rozetka.ua/goods/2183764/kingston_hyperx_hx_kb4rd1_ru_r1_images_2183764612.jpg"
+    },
+    {
+      "id": "product-999",
+      "name": "Some name 12",
+      "price": "110",
+      "imgPath": "https://i2.rozetka.ua/goods/4574928/logitech_920_008019_images_4574928496.jpg"
+    }
+  ]
+}
