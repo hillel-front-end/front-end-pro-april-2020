@@ -1,0 +1,47 @@
+[
+	{
+		"id": "ui-0",
+		"name": "name-0",
+		"viewed": [
+			"product-8",
+			"product-400",
+			"product-16",
+			"product-777",
+			"product-999",
+			"product-888"
+		]
+	},
+	{
+		"id": "ui-1",
+		"name": "name-1",
+		"viewed": []
+	},
+	{
+		"id": "ui-2",
+		"name": "name-2",
+		"viewed": []
+	},
+	{
+		"id": "ui-3",
+		"name": "name-3",
+		"viewed": [
+			"product-888",
+			"product-8"
+		]
+	},
+	{
+		"id": "ui-4",
+		"name": "name-4",
+		"viewed": []
+	},
+	{
+		"id": "ui-5",
+		"name": "name-5",
+		"viewed": []
+	},
+	{
+		"id": "ui-6",
+		"name": "name-6",
+		"viewed": []
+	}
+]
