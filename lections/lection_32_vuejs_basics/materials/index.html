@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+        .active {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div id="app">
+        Hello {{ x + message }}
+        {{ list.concat(x) }}
+        <hr>
+        {{ message }}
+        <hr>
+        {{ info.value }}
+    </div> -->
+
+  <!-- <hr />
+    <div id="app-2">
+        {{ message }}
+        <hr>
+        {{ className }}   
+        <hr>
+        <span v-bind:class="className">
+            span inner text
+        </span>
+        <hr>
+        <div :style="appearence">
+            Lorem ipsum dolor 
+        </div>
+        <div :style="appearence + 'font-size:' + value*3 + 'px'">
+            Super text
+        </div>
+    </div>
+
+    <hr /> -->
+
+    <!-- <div id="app-3">
+        <span v-if="seen">Сейчас меня видно {{info}}</span>
+    </div> -->
+ 
+    <!-- <hr />
+
+    <div id="app-4">
+        <table border="1">
+            <tr>
+                <th>Index</th>
+                <th>Value</th>
+            </tr>
+            <tr v-for="(item, index) in arr">
+                <td>
+                    {{ index }}
+                </td>
+                <td>
+                    {{ item }}
+                </td>
+            </tr>
+        </table>
+        <hr>
+
+
+        <ul>
+            <li v-for="(item, index) in list" v-if="item.text">
+                {{index}} || {{ item.text }}
+            </li>
+        </ul>
+
+        <ul>
+            <li v-for="(item, index) in getFilterdList()" v-if="item.text">
+                {{index}} || {{ item.text }}
+            </li>
+        </ul>
+        <hr>
+        <div v-for="(item, index) in info">
+            {{ item }} | {{ index }}
+        </div>
+    </div>
+
+    <hr> -->
+    <!-- <div id="app-5">
+       <span>
+            {{ calculate(8) }}
+            <span v-html="calculate(8)"></span>
+            <span>
+                <sup>{{ 8*10 }}</sup>
+            </span>
+           
+        </span>
+        <hr>
+        <button v-on:click="onClick">
+            Click
+        </button>
+        <button 
+            v-for="(btn, index) in specialNames" 
+            @click="onClick($event, btn)"
+            :class="{ 'active': btn === activeBtn }"
+        >
+            Click - {{ btn }}
+        </button>
+        <hr>
+        Active btn: {{ activeBtn }}
+        <hr>
+        <button @click="onClearActive">Clear Active</button>
+    </div>
+
+    <hr> -->
+
+     <!-- <div id="app-6">
+         One-way binding
+        <p>{{ message }}</p>
+
+        <hr>
+        Two-way binding:<br />
+        <input type="text" @mouseover="onEdit" :value="twoWayExample">
+        <input type="text" v-model="twoWayExample">
+        <hr>
+        <span> {{ twoWayExample }} </span>
+
+        <hr>
+
+        <div @click="onContainer">
+            Container
+            <button @click.stop="onBtnClick" @contextmenu.prevent="onContext">Click</button>
+        </div>
+    </div> -->
+
+    <style>
+        .content {
+            display: flex;
+        }
+        .content table {
+            border: 2px solid black;
+            width: 100%;
+            min-height: 200px;
+        }
+
+        .content td {
+            height: 20px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .table-wrapper {
+            max-height: 200px;
+            overflow-y: auto;
+            width: 50%;
+        }
+    </style>
+
+    <div class="app7-practice">
+        {{ title }}
+        <div class=content>
+            <div class="table-wrapper">
+                <table id="left">
+                    <tr v-for="passenger in leftTable">
+                        <td>
+                            {{ passenger }}
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="table-wrapper">
+                <table id="right">
+                    <tr v-for="passenger in rightTable">
+                        <td>
+                            {{ passenger }}
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <hr>
+        <button @click="onStopAdding">
+            {{ enabledEmulating ? 'Stop' : 'Proceed' }} Adding Passengers
+        </button>
+        Status: {{ enabledEmulating }}
+        <hr>
+        <span v-for="person in queue">
+            {{ person }}
+        </span>
+    </div>
+    <script src="./main.js"></script>
+    <script src="./practice.js"></script>
+</body>
+</html>
