@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+        .active {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        {{ list }}
+        <br />
+        {{ merge }}
+        <br />
+        {{ showBanner }}
+        <button @dblclick="onAnnihilation">Annihilation</button>
+
+        <input-wrapper-event 
+            @message-changed="onEditMessageEvent"
+            :input-value="message"
+        >
+        </input-wrapper-event> 
+        <!-- <un-ordered-list 
+            title="Hello from app"
+            :description="persons"
+        ></un-ordered-list> -->
+        <!-- <hr>
+        List: {{ list }}
+        <hr> -->
+        <!-- <ul>
+            <li v-for="item in list" v-if="item > 0">
+                User id: {{ item }}
+            </li>
+        </ul>
+        <ul>
+            <li v-for="item in persons" v-if="item > 0">
+                User id: {{ item }}
+            </li>
+        </ul>
+        <ul>
+            <li v-for="item in marks" v-if="item > 0">
+                User id: {{ item }}
+            </li>
+        </ul> -->
+        <!-- <un-ordered-list :list="list"></un-ordered-list>
+        <un-ordered-list :list="persons"></un-ordered-list>
+        <un-ordered-list title="TEXT" :list="marks"></un-ordered-list>
+        
+        
+        <input type="text" v-model="target" placeholder="name of source">
+        <button @click="onRemove">Remove</button> -->
+        <!-- <hr>
+        <hr>
+        Message: {{ message }}
+        <br> -->
+        <!-- <input type="text" v-model="message"> -->
+        <!-- <input-wrapper
+            :input-value="message" 
+            :on-edit="onEditMessage">
+        </input-wrapper>
+        <hr>
+        <input-wrapper-event 
+            @message-changed="onEditMessageEvent"
+            :input-value="message"
+        >
+        </input-wrapper-event> -->
+
+        <hr>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
