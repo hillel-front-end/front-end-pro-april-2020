@@ -41,7 +41,7 @@ export default {
     },
     methods: {
         getWeather(city) {
-             return fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&id=2172797&appid=id`)
+             return fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&id=2172797&appid=dffbf35644b6ee849314f61335bb9ebf`)
                 .then(resp => resp.json())
                 .then(resp => {
                     this.weather = resp;
