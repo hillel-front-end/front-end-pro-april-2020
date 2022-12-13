@@ -12,7 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "node-static": "^0.7.10",
-    "express": "4.17.1",
+    "express": "4.17.3",
     "body-parser": "1.18.2"
   }
 }
